@@ -24,3 +24,6 @@ jobs:
       - name: Run Application
         run: |
           uvicorn main:app --reload
+      - name: Stop Application
+        run: |
+          pkill -f "uvicorn main:app"
